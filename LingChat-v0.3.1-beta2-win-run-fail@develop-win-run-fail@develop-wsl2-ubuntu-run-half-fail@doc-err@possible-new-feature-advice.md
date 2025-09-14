@@ -220,7 +220,7 @@ https://github.com/shlin0415/TmpForIssues/blob/main/lingchat.exe.env
 [INFO]: 开始处理句子: 【害羞】我刚才还在想你是不是要睡到中午呢...
 [ERROR]: 通用网络大模型流式请求失败: Error code: 401 - {'error': {'message': "You didn't provide an API key. You need to provide your API key in an Authorization header using Bearer auth (i.e. Authorization: Bearer YOUR_KEY). ", 'type': 'invalid_request_error', 'param': None, 'code': None}, 'request_id': '4cfa9e0a-6290-4050-8db2-c59b37930a99'}
 ```
-更改.env，比如开关rag或者时间感知等，没有影响到这个情况。
+更改一些.env选项，比如开关rag或者时间感知等，没有影响到这个情况。
 输入hello后，控制台显示上述情况后，网页显示“灵灵正在思考中”，无法再输入。
 是否开启科学魔法代理不影响。
 用python main.py情况一样。
@@ -381,6 +381,7 @@ user可以定个主题写个开头，后续挂在后台听，类似的。话说�
 如果能设置自动播放所有回复也挺好的，间隔个1-2秒。
 说起来观察两位角色互相对话还要做双人同屏，哇想想还挺不容易的，说不定以后角色会变得比开酒馆还多（）。
 ##### 不过这两个建议在之前的issue里的主动对话能力和0.4.0后续更新规划复杂剧情的相关内容里似乎都有所提及了2333。
+#### 3 说起来，是不是.env里和设置里，注释一下哪些选项是必填的会比较好，第一次用的时候看到好多地方都可以填，有点慌乱
 
 话说，self能不能申请加个技术开发交流群啥的，学习大佬技术期望.jpg，虽然开发技能不太行，也许可以作为免费劳动力，帮忙测试测试啥的。
 虽然目前离成功运行还有一些距离，泪目。
