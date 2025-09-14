@@ -126,6 +126,6 @@ https://github.com/shlin0415/TmpForIssues/blob/main/lingchat.exe.env
 ███████╗ ██║ ██║ ╚████║ ╚██████╔╝     █████╗ ██║  ██║ ██║  ██║    ██║
 ╚══════╝ ╚═╝ ╚═╝  ╚═══╝  ╚═════╝      ╚════╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝    ╚═╝
 ```
-这次打开http://localhost:8765/可以看到了。
+这次打开[http://localhost:8765/]可以看到了。
 
 <img src="[https://github.com/shlin0415/TmpForIssues/blob/main/20250914-104246.jpg]" style="width:30%;" alt="description" />
