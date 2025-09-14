@@ -48,7 +48,7 @@ https://github.com/shlin0415/TmpForIssues/blob/main/lingchat.exe.env
 尝试了一下win上conda+uv安装lingchat develop，安装跟wsl2那时差不多。
 情况跟v0.3.1-beta2-win-20250913-morning-to-night差不多。
 也是卡在那儿了，打开网页白茫茫一片。
-```shell
+```conda-shell
 (lingchat-env) (lingchat-dev) PS D:\aaa-new\setups\lingchat-dev> python -m ling_chat
 [92m[INFO][0m正在加载环境变量文件: .env
 [DEBUG]:                                                                             🕙[0m
@@ -96,3 +96,36 @@ https://github.com/shlin0415/TmpForIssues/blob/main/lingchat.exe.env
 [INFO]: 接收到中断信号，正在关闭程序...
 [INFO]: 已删除临时文件
 ```
+
+## develop-wsl2-ubuntu-20250913-night
+突然想起来新版人物有了，wsl2也许可以了。
+接下来出现的问题不知道是不是有wsl2自身的原因。
+但wsl2是目前运行进度走的最远的，好怪啊。
+把带新版人物的整个data文件夹从v0.3.1-beta2-win粘贴了过去。
+依旧是OPEN_FRONTEND_APP=false启动。
+```wsl2-shell
+(lingchat-dev) (lingchat-env) root@zzz:~/lingchat-dev# python -m ling_chat
+[INFO]正在加载环境变量文件: .env
+[INFO]: √ 情绪分类模型加载正常 - 已成功加载情绪分类模型: emotion_model_18emo
+[INFO]: 注册API路由...
+[INFO]: 挂载静态文件服务...
+[INFO]: 正在启动HTTP服务器...
+[INFO]: 已根据环境变量禁用语音检查
+[INFO]: 已根据环境变量禁用前端界面
+[INFO]: Started server process [1295]
+[INFO]: Waiting for application startup.
+[INFO]: 正在初始化数据库...
+[INFO]: 正在同步游戏角色数据...
+[INFO]: Application startup complete.
+[INFO]: Uvicorn running on http://0.0.0.0:8765 (Press CTRL+C to quit)
+[INFO]: ✔ 应用加载成功
+█╗       ██╗ ███╗   ██╗  ██████╗      █████╗ ██╗  ██╗  █████╗  ████████╗
+██║      ██║ ████╗  ██║ ██╔════╝     ██╔═══╝ ██║  ██║ ██╔══██╗ ╚══██╔══╝
+██║      ██║ ██╔██╗ ██║ ██║  ███╗    ██║     ███████║ ███████║    ██║
+██║      ██║ ██║╚██╗██║ ██║   ██║    ██║     ██╔══██║ ██╔══██║    ██║
+███████╗ ██║ ██║ ╚████║ ╚██████╔╝     █████╗ ██║  ██║ ██║  ██║    ██║
+╚══════╝ ╚═╝ ╚═╝  ╚═══╝  ╚═════╝      ╚════╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝    ╚═╝
+```
+这次打开http://localhost:8765/可以看到了。
+
+<img src="[https://github.com/shlin0415/TmpForIssues/blob/main/20250914-104246.jpg]" style="width:30%;" alt="description" />
