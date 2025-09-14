@@ -27,6 +27,13 @@ ui相关的几个包安装一直有点问题。
 
 ## v0.3.1-beta2-win-20250913-morning-to-night
 解压之后运行exe。
-<img src="https://github.com/shlin0415/TmpForIssues/blob/main/20250914-101258.jpg" style="width:35%;" alt="description" />
-<img src="https://github.com/shlin0415/TmpForIssues/blob/main/20250914-101303.jpg" style="width:35%;" alt="description" />
-<img src="https://github.com/shlin0415/TmpForIssues/blob/main/20250914-101325.jpg" style="width:35%;" alt="description" />
+
+<img src="https://github.com/shlin0415/TmpForIssues/blob/main/20250914-101258.jpg" style="width:50%;" alt="description" />
+
+<img src="https://github.com/shlin0415/TmpForIssues/blob/main/20250914-101303.jpg" style="width:50%;" alt="description" />
+
+<img src="https://github.com/shlin0415/TmpForIssues/blob/main/20250914-101325.jpg" style="width:50%;" alt="description" />
+
+总之就是卡在那儿了。
+重启之后只开lingchat也是一样的情况，也没有报毒。
+
