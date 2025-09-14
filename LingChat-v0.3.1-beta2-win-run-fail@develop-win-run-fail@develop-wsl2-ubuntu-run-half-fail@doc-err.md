@@ -129,3 +129,92 @@ https://github.com/shlin0415/TmpForIssues/blob/main/lingchat.exe.env
 这次打开[http://localhost:8765/]可以看到了。
 
 <img src="https://github.com/shlin0415/TmpForIssues/blob/main/20250914-104246.jpg" style="width:30%;" alt="description" />
+
+本来以为是不是ok了，虽然wsl2很卡。
+没想到新的问题出现了。
+第一个是测试角色音量wav和气泡音量wav没声音，但播放背景音乐mp3，音响拉到最大是有声音的。
+第二个是通用网络大模型流式请求失败，测试输入hello之后没后续了。
+```wsl2-shell
+[INFO]: 127.0.0.1:41860 - "GET / HTTP/1.1" 200
+[INFO]: 127.0.0.1:41860 - "GET / HTTP/1.1" 200
+[INFO]: 127.0.0.1:41860 - "GET /assets/index-Dn8qAaVr.js HTTP/1.1" 200
+[INFO]: 127.0.0.1:41860 - "GET /assets/index-Dn8qAaVr.js HTTP/1.1" 200
+[INFO]: 127.0.0.1:41860 - "GET /assets/index-CvUGl3Rf.css HTTP/1.1" 200
+[INFO]: 127.0.0.1:41860 - "GET /assets/index-CvUGl3Rf.css HTTP/1.1" 200
+[INFO]: 127.0.0.1:41860 - "GET /%40/assets/images/default_bg.jpg HTTP/1.1" 404
+[INFO]: 127.0.0.1:41860 - "GET /%40/assets/images/default_bg.jpg HTTP/1.1" 404
+[INFO]: 127.0.0.1:41860 - "GET /api/settings/config HTTP/1.1" 200
+[INFO]: 127.0.0.1:41860 - "GET /api/settings/config HTTP/1.1" 200
+[INFO]: 127.0.0.1:41860 - "GET /assets/LingChatLogo-DrtNjGh5.png HTTP/1.1" 200
+[INFO]: 127.0.0.1:41860 - "GET /assets/LingChatLogo-DrtNjGh5.png HTTP/1.1" 200
+[INFO]: 当前RAG窗口大小是：5
+[INFO]: 正在初始化RAG系统...
+[INFO]: 正在为新角色 (ID: 0) 初始化RAG记忆库...
+[ERROR]: 切换RAG角色 (ID: 0) 时出错: RAGSystem必须使用一个有效的character_id进行初始化。
+[WARNING]: RAG系统初始化失败或禁用
+[INFO]: 初始化LLM webllm 提供商中...
+[INFO]: 创建通用联网大模型服务提供商
+[INFO]: 通用网络大模型初始化完毕！
+[INFO]: 初始化翻译模型 webllm 提供商中...
+[INFO]: 创建通用联网大模型服务提供商
+[INFO]: 通用网络大模型初始化完毕！
+[INFO]: 【视觉识别】你没有改过VD_API_KEY，无法进行图像识别哦！
+[WARNING]: 你的环境变量中未设置TTS类型（或是设置错误），将使用角色卡的默认语音合成器！
+[INFO]: 检测到角色切换，正在为角色 (ID: 2) 准备长期记忆...
+[INFO]: 正在为新角色 (ID: 2) 初始化RAG记忆库...
+[INFO]: RAG: 准备从本地路径加载嵌入模型: /root/lingchat-dev/ling_chat/third_party/memory_rag_models/all-MiniLM-L6-v2
+[ERROR]: 本地模型路径不存在或不是文件夹: /root/lingchat-dev/ling_chat/third_party/memory_rag_models/all-MiniLM-L6-v2
+[ERROR]: 请确保模型已下载。
+[ERROR]: 您可以运行 '/root/lingchat-dev/ling_chat/third_party/downloading_RAG_model' 脚本来下载模型。
+[ERROR]: 为角色 (ID: 2) 初始化RAG记忆库失败。
+[INFO]: 日程功能已通过环境变量禁用
+[INFO]: 正在/root/lingchat-dev/ling_chat/data/game_data/scripts中寻找剧本
+[INFO]: 找到剧本文件一只简简单单的剧情
+[INFO]: 🧠🧠🧠 ai_service 初始化
+[INFO]: 127.0.0.1:41860 - "GET /api/v1/chat/info/init?user_id=1 HTTP/1.1" 200
+[INFO]: 127.0.0.1:41860 - "GET /api/v1/chat/info/init?user_id=1 HTTP/1.1" 200
+[INFO]: 127.0.0.1:41874 - "GET /api/v1/chat/history/list?user_id=1&page=1&page_size=10 HTTP/1.1" 200
+[INFO]: 127.0.0.1:41874 - "GET /api/v1/chat/history/list?user_id=1&page=1&page_size=10 HTTP/1.1" 200
+[INFO]: 127.0.0.1:41884 - "GET /api/v1/chat/back-music/list HTTP/1.1" 200
+[INFO]: 127.0.0.1:41884 - "GET /api/v1/chat/back-music/list HTTP/1.1" 200
+[INFO]: 127.0.0.1:41900 - "GET /api/v1/chat/character/get_all_characters HTTP/1.1" 200
+[INFO]: 127.0.0.1:41900 - "GET /api/v1/chat/character/get_all_characters HTTP/1.1" 200
+[INFO]: 127.0.0.1:41912 - "GET /api/v1/chat/background/list HTTP/1.1" 200
+[INFO]: 127.0.0.1:41912 - "GET /api/v1/chat/background/list HTTP/1.1" 200
+[INFO]: 127.0.0.1:41860 - "GET /api/v1/chat/info/init?user_id=1 HTTP/1.1" 200
+[INFO]: 127.0.0.1:41860 - "GET /api/v1/chat/info/init?user_id=1 HTTP/1.1" 200
+[INFO]: 127.0.0.1:41920 - "GET /api/v1/chat/character/get_avatar/%E6%AD%A3%E5%B8%B8.png?t=1757817663678 HTTP/1.1" 200
+[INFO]: 127.0.0.1:41920 - "GET /api/v1/chat/character/get_avatar/%E6%AD%A3%E5%B8%B8.png?t=1757817663678 HTTP/1.1" 200
+[INFO]: 127.0.0.1:41860 - "GET /api/v1/chat/character/character_file/%E8%AF%BA%E4%B8%80%E9%92%A6%E7%81%B5/avatar/%E5%A4%B4%E5%83%8F.png HTTP/1.1" 200
+[INFO]: 127.0.0.1:41860 - "GET /api/v1/chat/character/character_file/%E8%AF%BA%E4%B8%80%E9%92%A6%E7%81%B5/avatar/%E5%A4%B4%E5%83%8F.png HTTP/1.1" 200
+[INFO]: 127.0.0.1:41912 - "GET /api/v1/chat/background/background_file/%E5%A4%9C%E6%99%9A.jpg HTTP/1.1" 200
+[INFO]: 127.0.0.1:41912 - "GET /api/v1/chat/background/background_file/%E5%A4%9C%E6%99%9A.jpg HTTP/1.1" 200
+[INFO]: 127.0.0.1:41900 - "GET /api/v1/chat/background/background_file/%E7%99%BD%E5%A4%A9.jpeg HTTP/1.1" 200
+[INFO]: 127.0.0.1:41900 - "GET /api/v1/chat/background/background_file/%E7%99%BD%E5%A4%A9.jpeg HTTP/1.1" 200
+[INFO]: 127.0.0.1:41884 - "GET /api/v1/chat/character/get_avatar/%E6%AD%A3%E5%B8%B8.png?t=1757817663690 HTTP/1.1" 200
+[INFO]: 127.0.0.1:41884 - "GET /api/v1/chat/character/get_avatar/%E6%AD%A3%E5%B8%B8.png?t=1757817663690 HTTP/1.1" 200
+[INFO]: 127.0.0.1:56614 - "WebSocket /ws" [accepted]
+[INFO]: connection open
+[INFO]: 127.0.0.1:44156 - "GET /audio_effects/%E8%A7%92%E8%89%B2%E9%9F%B3%E9%87%8F%E6%B5%8B%E8%AF%95.wav HTTP/1.1" 206
+[INFO]: 127.0.0.1:44156 - "GET /audio_effects/%E8%A7%92%E8%89%B2%E9%9F%B3%E9%87%8F%E6%B5%8B%E8%AF%95.wav HTTP/1.1" 206
+[INFO]: 127.0.0.1:44172 - "GET /audio_effects/%E7%96%91%E9%97%AE.wav HTTP/1.1" 206
+[INFO]: 127.0.0.1:44172 - "GET /audio_effects/%E7%96%91%E9%97%AE.wav HTTP/1.1" 206
+[INFO]: 127.0.0.1:33976 - "GET /api/v1/chat/back-music/music_file/%E5%A4%9C%E6%99%9A%E9%9F%B3%E6%95%88.mp3 HTTP/1.1" 206
+[INFO]: 127.0.0.1:33976 - "GET /api/v1/chat/back-music/music_file/%E5%A4%9C%E6%99%9A%E9%9F%B3%E6%95%88.mp3 HTTP/1.1" 206
+[INFO]: 127.0.0.1:33976 - "GET /vite.svg HTTP/1.1" 200
+[INFO]: 127.0.0.1:33976 - "GET /vite.svg HTTP/1.1" 200
+[INFO]: 来自客户端的消息：{'type': 'message', 'content': 'hello.'}
+
+=== AI回复流式输出 ===
+[INFO]: 127.0.0.1:42814 - "GET /audio_effects/%E6%97%A0%E8%AF%AD.wav HTTP/1.1" 206
+[INFO]: 127.0.0.1:42814 - "GET /audio_effects/%E6%97%A0%E8%AF%AD.wav HTTP/1.1" 206
+[INFO]: 127.0.0.1:42812 - "GET /pictures/animation/AI%E6%80%9D%E8%80%83.webp?t=1757818074571 HTTP/1.1" 200
+[INFO]: 127.0.0.1:42812 - "GET /pictures/animation/AI%E6%80%9D%E8%80%83.webp?t=1757818074571 HTTP/1.1" 200
+【惊讶】啊！莱姆你醒啦？【[INFO]: 开始处理句子: 【惊讶】啊！莱姆你醒啦？
+[ERROR]: 通用网络大模型流式请求失败: Error code: 401 - {'error': {'message': "You didn't provide an API key. You need to provide your API key in an Authorization header using Bearer auth (i.e. Authorization: Bearer YOUR_KEY). ", 'type': 'invalid_request_error', 'param': None, 'code': None}, 'request_id': 'fe0975ab-9ac4-4003-b87f-ebf57c919344'}
+害羞】我刚才还在想你是不是要睡到中午呢...【害羞】我刚才还在想你是不是要睡到中午呢...
+=== 流式输出结束 ===
+[INFO]: 开始处理句子: 【害羞】我刚才还在想你是不是要睡到中午呢...
+[ERROR]: 通用网络大模型流式请求失败: Error code: 401 - {'error': {'message': "You didn't provide an API key. You need to provide your API key in an Authorization header using Bearer auth (i.e. Authorization: Bearer YOUR_KEY). ", 'type': 'invalid_request_error', 'param': None, 'code': None}, 'request_id': '4cfa9e0a-6290-4050-8db2-c59b37930a99'}
+```
+
