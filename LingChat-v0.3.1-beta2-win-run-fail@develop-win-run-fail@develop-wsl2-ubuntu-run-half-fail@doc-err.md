@@ -379,3 +379,5 @@ Prefix dict has been built successfully.
 是藏在lingchat git仓库中的，查了一下目前101人的群吗。人还蛮多的。
 吹水群已加（）。
 另外以防万一去重新运行了一下稳定版exe，还好还好还能使（）。
+总之感谢看到这里(｡･ω･｡)(❁´ω`❁)。
+
