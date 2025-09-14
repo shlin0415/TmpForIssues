@@ -217,4 +217,16 @@ https://github.com/shlin0415/TmpForIssues/blob/main/lingchat.exe.env
 [INFO]: 开始处理句子: 【害羞】我刚才还在想你是不是要睡到中午呢...
 [ERROR]: 通用网络大模型流式请求失败: Error code: 401 - {'error': {'message': "You didn't provide an API key. You need to provide your API key in an Authorization header using Bearer auth (i.e. Authorization: Bearer YOUR_KEY). ", 'type': 'invalid_request_error', 'param': None, 'code': None}, 'request_id': '4cfa9e0a-6290-4050-8db2-c59b37930a99'}
 ```
+更改.env，比如开关rag或者时间感知等，没有影响到这个情况。
+输入hello后，控制台显示上述情况后，网页显示“灵灵正在思考中”，无法再输入。
+是否开启科学魔法代理不影响。
+用python main.py情况一样。
 
+## doc-err
+其他小情况。
+“你可以参考源代码使用教程来使用LingChat的源代码，并随时获取最新的develop开发版更新。”
+源代码使用教程已经404 - page not found了。
+
+## 其他
+话说，我能不能加个开发群啥的，虽然开发技能不太行，也许可以帮忙测试测试，虽然目前成功运行还有问题，泪目。
+是藏在lingchat git仓库中的，查了一下目前101人的群吗。人还蛮多的。
