@@ -36,4 +36,10 @@ ui相关的几个包安装一直有点问题。
 
 总之就是卡在那儿了。
 重启之后只开lingchat也是一样的情况，也没有报毒。
+log
+https://github.com/shlin0415/TmpForIssues/blob/main/Exe.LingChat-main_2025-09-13_15-10-33.log
+.env
+https://github.com/shlin0415/TmpForIssues/blob/main/lingchat.exe.env
 
+后面让OPEN_FRONTEND_APP=false，但打开localhost8765时仍然是白茫茫的，没有wsl2那时的界面（此时电脑上没有其他东西显式地开着）。
+其他.env项目调了调，没什么变化。
