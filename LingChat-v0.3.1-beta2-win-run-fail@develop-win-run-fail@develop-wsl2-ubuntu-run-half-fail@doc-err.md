@@ -316,8 +316,9 @@ https://github.com/shlin0415/TmpForIssues/blob/main/lingchat.exe.env
 [INFO]: connection closed
 ```
 语音合成，SIMPLE_VITS_API和STYLE_VITS_API，缩写似乎都是sva啊。
-另外，设置了TTS_TYPE="sva"，不知道为啥选到sbv2去了。
+另外，设置了TTS_TYPE="sva"，不知道为啥选到sbv2api去了。
 重开一次，网页高级设置里面TTS_TYPE="sva"了已经。
+说起来，既然sbv2api是SBV2API_API_URL，那sbv2是哪位（笑哭）。
 ```
 ## 语音合成 BEGIN # 配置语音合成API KEY和本地地址等
 SIMPLE_VITS_API_URL="http://localhost:23456/voice/vits" # SIMPLE_VITS_API的语音合成API地址
