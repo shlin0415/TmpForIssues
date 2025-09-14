@@ -1,6 +1,6 @@
-# v0.3.1-beta2-win-run-fail@develop-win-run-fail@develop-wsl2-ubuntu-run-half-fail@doc-err
+# v0.3.1-beta2-win-run-fail@develop-win-run-fail@develop-wsl2-ubuntu-run-half-fail@doc-err@possible-new-feature-advice
 感谢lingchat开发者们持续的开发改进哇。
-大概是以上四个情况。
+大概是以上五个方面。
 先贴一下电脑情况。
 
 <img src="https://github.com/shlin0415/TmpForIssues/blob/main/20250914-091657.jpg" style="width:30%;" alt="description" />
@@ -373,7 +373,15 @@ Prefix dict has been built successfully.
 “可以参考源代码使用教程来使用LingChat的源代码，并随时获取最新的develop开发版更新。”
 源代码使用教程已经404 - page not found了。
 
-### 其他
+### possible-new-feature-advice & others
+#### 1 对话候选项
+进行对话的时候，通过模型或随机，在对话库里抽3-4个候选项。
+#### 2 让user作为观察者，观察两位角色互相对话
+user可以定个主题写个开头，后续挂在后台听，类似的。话说现在右上角那个新的自动按钮是自动播放功能吗，目前按了好像无事发生。
+如果能设置自动播放所有回复也挺好的，间隔个1-2秒。
+说起来观察两位角色互相对话还要做双人同屏，哇想想还挺不容易的，说不定以后角色会变得比开酒馆还多（）。
+##### 不过这两个建议在之前的issue里的主动对话能力和0.4.0后续更新规划复杂剧情的相关内容里似乎都有所提及了2333。
+
 话说，self能不能申请加个技术开发交流群啥的，学习大佬技术期望.jpg，虽然开发技能不太行，也许可以作为免费劳动力，帮忙测试测试啥的。
 虽然目前离成功运行还有一些距离，泪目。
 是藏在lingchat git仓库中的，查了一下目前101人的群吗。人还蛮多的。
