@@ -366,6 +366,7 @@ Prefix dict has been built successfully.
  * Running on http://10.196.85.113:23456 [in _internal._log:187]
 2025-09-14 12:07:08 [INFO] Press CTRL+C to quit [in _internal._log:187]
 ```
+另外气泡音wav还是放不了的样子，声音测试莫得声音，夜晚背景音一如既往可以听见。
 
 ## doc-err
 其他小情况。
