@@ -2,7 +2,7 @@
 大概是以上四个情况。
 先贴一下电脑情况。
 ```windows
-
+[!image](https://github.com/shlin0415/TmpForIssues/blob/main/20250914-091657.jpg)
 ```
 还是按时间顺序讲吧。
 
