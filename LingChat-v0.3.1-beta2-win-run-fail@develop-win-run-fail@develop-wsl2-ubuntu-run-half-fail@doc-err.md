@@ -227,7 +227,7 @@ https://github.com/shlin0415/TmpForIssues/blob/main/lingchat.exe.env
 “你可以参考源代码使用教程来使用LingChat的源代码，并随时获取最新的develop开发版更新。”
 源代码使用教程已经404 - page not found了。
 
-## 其他
+### 其他
 话说，self能不能申请加个技术开发交流群啥的，学习大佬技术期望.jpg，虽然开发技能不太行，也许可以作为免费劳动力，帮忙测试测试啥的。
 虽然目前成功运行还有问题，泪目。
 是藏在lingchat git仓库中的，查了一下目前101人的群吗。人还蛮多的。
