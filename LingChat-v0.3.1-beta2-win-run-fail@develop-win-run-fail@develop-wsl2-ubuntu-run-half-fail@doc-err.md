@@ -3,8 +3,10 @@
 大概是以上四个情况。
 先贴一下电脑情况。
 
-## develop-wsl2-ubuntu-20250913-morning
 <img src="https://github.com/shlin0415/TmpForIssues/blob/main/20250914-091657.jpg" style="width:30%;" alt="description" />
+
+## develop-wsl2-ubuntu-20250913-morning
+
 
 按时间顺序。
 先是准备尝试一下在win-wsl2-ubuntu上行不行。
