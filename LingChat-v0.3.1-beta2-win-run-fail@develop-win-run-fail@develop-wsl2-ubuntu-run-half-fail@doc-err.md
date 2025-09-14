@@ -43,3 +43,56 @@ https://github.com/shlin0415/TmpForIssues/blob/main/lingchat.exe.env
 
 后面让OPEN_FRONTEND_APP=false，但打开localhost8765时仍然是白茫茫的，没有wsl2那时的界面（此时电脑上没有其他东西显式地开着）。
 其他.env项目调了调，没什么变化。
+
+## develop-conda-20250913-afternoon-to-night
+尝试了一下win上conda+uv安装lingchat develop，安装跟wsl2那时差不多。
+情况跟v0.3.1-beta2-win-20250913-morning-to-night差不多。
+也是卡在那儿了，打开网页白茫茫一片。
+```shell
+(lingchat-env) (lingchat-dev) PS D:\aaa-new\setups\lingchat-dev> python -m ling_chat
+[92m[INFO][0m正在加载环境变量文件: .env
+[DEBUG]:                                                                             🕙[0m
+加载的标签映射关系:
+[DEBUG]: 0: 兴奋
+......
+[DEBUG]: 17: 高兴
+[INFO]: √ 情绪分类模型加载正常 - 已成功加载情绪分类模型: emotion_model_18emo
+[INFO]: 注册API路由...
+[INFO]: 挂载静态文件服务...
+[INFO]: 正在启动HTTP服务器...
+[INFO]: 已根据环境变量禁用语音检查
+[INFO]: ✔ 应用加载成功
+█╗       ██╗ ███╗   ██╗  ██████╗      █████╗ ██╗  ██╗  █████╗  ████████╗
+██║      ██║ ████╗  ██║ ██╔════╝     ██╔═══╝ ██║  ██║ ██╔══██╗ ╚══██╔══╝
+██║      ██║ ██╔██╗ ██║ ██║  ███╗    ██║     ███████║ ███████║    ██║
+██║      ██║ ██║╚██╗██║ ██║   ██║    ██║     ██╔══██║ ██╔══██║    ██║
+███████╗ ██║ ██║ ╚████║ ╚██████╔╝     █████╗ ██║  ██║ ██║  ██║    ██║
+╚══════╝ ╚═╝ ╚═╝  ╚═══╝  ╚═════╝      ╚════╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝    ╚═╝
+[WARNING]: [Deprecation]: 请使用 --run webview 启动前端界面
+[INFO]: Started server process [3836]
+[INFO]: Waiting for application startup.
+[INFO]: 正在初始化数据库...
+[INFO]: 正在同步游戏角色数据...
+已删除不存在的角色: 可爱的小狼娘 (ID: 1)
+[INFO]: Application startup complete.
+[INFO]: Uvicorn running on http://0.0.0.0:8765 (Press CTRL+C to quit)
+[INFO]: 127.0.0.1:7819 - "GET / HTTP/1.1" 200
+[INFO]: 127.0.0.1:7819 - "GET / HTTP/1.1" 200
+[INFO]: 127.0.0.1:7819 - "GET /assets/index-Dn8qAaVr.js HTTP/1.1" 200
+[INFO]: 127.0.0.1:7819 - "GET /assets/index-Dn8qAaVr.js HTTP/1.1" 200
+[INFO]: 127.0.0.1:7825 - "GET /assets/index-CvUGl3Rf.css HTTP/1.1" 200
+[INFO]: 127.0.0.1:7825 - "GET /assets/index-CvUGl3Rf.css HTTP/1.1" 200
+[INFO]: 127.0.0.1:7819 - "GET /vite.svg HTTP/1.1" 200
+[INFO]: 127.0.0.1:7819 - "GET /vite.svg HTTP/1.1" 200
+[INFO]: 127.0.0.1:7948 - "GET / HTTP/1.1" 200
+[INFO]: 127.0.0.1:7948 - "GET / HTTP/1.1" 200
+[INFO]: 127.0.0.1:7948 - "GET /assets/index-Dn8qAaVr.js HTTP/1.1" 200
+[INFO]: 127.0.0.1:7948 - "GET /assets/index-Dn8qAaVr.js HTTP/1.1" 200
+[INFO]: 127.0.0.1:7948 - "GET /assets/index-CvUGl3Rf.css HTTP/1.1" 200
+[INFO]: 127.0.0.1:7948 - "GET /assets/index-CvUGl3Rf.css HTTP/1.1" 200
+[INFO]: 接收到中断信号，正在关闭程序...
+[INFO]: 已删除临时文件
+[INFO]: 程序已退出
+[INFO]: 接收到中断信号，正在关闭程序...
+[INFO]: 已删除临时文件
+```
