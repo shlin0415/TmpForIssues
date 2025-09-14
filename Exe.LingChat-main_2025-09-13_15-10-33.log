@@ -1,0 +1,46 @@
+2025-09-13-15:11:02 - LingChat-main - DEBUG - 
+加载的标签映射关系:
+2025-09-13-15:11:02 - LingChat-main - DEBUG - 0: 兴奋
+2025-09-13-15:11:02 - LingChat-main - DEBUG - 1: 厌恶
+2025-09-13-15:11:02 - LingChat-main - DEBUG - 2: 哭泣
+2025-09-13-15:11:02 - LingChat-main - DEBUG - 3: 害怕
+2025-09-13-15:11:02 - LingChat-main - DEBUG - 4: 害羞
+2025-09-13-15:11:02 - LingChat-main - DEBUG - 5: 心动
+2025-09-13-15:11:02 - LingChat-main - DEBUG - 6: 惊讶
+2025-09-13-15:11:02 - LingChat-main - DEBUG - 7: 慌张
+2025-09-13-15:11:02 - LingChat-main - DEBUG - 8: 担心
+2025-09-13-15:11:02 - LingChat-main - DEBUG - 9: 无奈
+2025-09-13-15:11:02 - LingChat-main - DEBUG - 10: 生气
+2025-09-13-15:11:02 - LingChat-main - DEBUG - 11: 疑惑
+2025-09-13-15:11:02 - LingChat-main - DEBUG - 12: 紧张
+2025-09-13-15:11:02 - LingChat-main - DEBUG - 13: 自信
+2025-09-13-15:11:02 - LingChat-main - DEBUG - 14: 认真
+2025-09-13-15:11:02 - LingChat-main - DEBUG - 15: 调皮
+2025-09-13-15:11:02 - LingChat-main - DEBUG - 16: 难为情
+2025-09-13-15:11:02 - LingChat-main - DEBUG - 17: 高兴
+2025-09-13-15:11:02 - LingChat-main - INFO - [92m√[0m 情绪分类模型加载正常 - 已成功加载情绪分类模型: emotion_model_18emo
+2025-09-13-15:11:03 - LingChat-main - INFO - 注册API路由...
+2025-09-13-15:11:03 - LingChat-main - INFO - 挂载静态文件服务...
+2025-09-13-15:11:03 - LingChat-main - INFO - 正在启动HTTP服务器...
+2025-09-13-15:11:03 - LingChat-main - INFO - 已根据环境变量禁用语音检查
+2025-09-13-15:11:04 - LingChat-main - INFO - [92m✔[0m 应用加载成功
+2025-09-13-15:11:04 - uvicorn.error - INFO - Started server process [17876]
+2025-09-13-15:11:04 - uvicorn.error - INFO - Waiting for application startup.
+2025-09-13-15:11:04 - LingChat-main - INFO - 正在初始化数据库...
+2025-09-13-15:11:04 - LingChat-main - INFO - 正在同步游戏角色数据...
+2025-09-13-15:11:04 - uvicorn.error - INFO - Application startup complete.
+2025-09-13-15:11:04 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8765 (Press CTRL+C to quit)
+2025-09-13-15:11:05 - uvicorn.access - INFO - 127.0.0.1:3935 - "GET / HTTP/1.1" 200
+2025-09-13-15:11:05 - uvicorn.access - INFO - 127.0.0.1:3935 - "GET / HTTP/1.1" 200
+2025-09-13-15:11:05 - uvicorn.access - INFO - 127.0.0.1:3935 - "GET /assets/index-Dn8qAaVr.js HTTP/1.1" 200
+2025-09-13-15:11:05 - uvicorn.access - INFO - 127.0.0.1:3935 - "GET /assets/index-Dn8qAaVr.js HTTP/1.1" 200
+2025-09-13-15:11:05 - uvicorn.access - INFO - 127.0.0.1:11073 - "GET /assets/index-CvUGl3Rf.css HTTP/1.1" 200
+2025-09-13-15:11:05 - uvicorn.access - INFO - 127.0.0.1:11073 - "GET /assets/index-CvUGl3Rf.css HTTP/1.1" 200
+2025-09-13-15:11:06 - uvicorn.access - INFO - 127.0.0.1:3935 - "GET /vite.svg HTTP/1.1" 200
+2025-09-13-15:11:06 - uvicorn.access - INFO - 127.0.0.1:3935 - "GET /vite.svg HTTP/1.1" 200
+2025-09-13-15:15:14 - uvicorn.access - INFO - 127.0.0.1:13947 - "GET / HTTP/1.1" 200
+2025-09-13-15:15:14 - uvicorn.access - INFO - 127.0.0.1:13947 - "GET / HTTP/1.1" 200
+2025-09-13-15:15:14 - uvicorn.access - INFO - 127.0.0.1:13947 - "GET /assets/index-Dn8qAaVr.js HTTP/1.1" 200
+2025-09-13-15:15:14 - uvicorn.access - INFO - 127.0.0.1:13947 - "GET /assets/index-Dn8qAaVr.js HTTP/1.1" 200
+2025-09-13-15:15:14 - uvicorn.access - INFO - 127.0.0.1:13947 - "GET /assets/index-CvUGl3Rf.css HTTP/1.1" 200
+2025-09-13-15:15:14 - uvicorn.access - INFO - 127.0.0.1:13947 - "GET /assets/index-CvUGl3Rf.css HTTP/1.1" 200
